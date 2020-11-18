@@ -1,0 +1,43 @@
+<div class="back" [routerLink]="['']"><< Back</div>
+
+<div class="edit-container">
+    <h2>Name: {{ruleData.properties.displayName}}</h2>
+    <h2>Kind: {{ruleData.kind}}</h2>
+
+    <form *ngIf="isScheduledTrue">
+        <div class="form-group">
+            <label>Display Name</label>
+            <input type="text"  #displayName formControlName="displayName" class="name form-control" value="{{ruleData.properties.displayName}}"/>
+        </div>
+        <div class="form-group">
+            <label>Severity</label>
+            <input type="text"  #severity formControlName="severity" class="name form-control" value="{{ruleData.properties.severity}}" />
+        </div>
+        <div class="form-group">
+            <label>Trigger Operator</label>
+            <input type="text"  #triggerOperator formControlName="triggerOperator" class="name form-control" value="{{ruleData.properties.triggerOperator}}"/>
+        </div>
+        <div class="form-group">
+            <label>Trigger Threshold</label>
+            <input type="text"  #triggerThreshold formControlName="triggerThreshold" class="name form-control" value="{{ruleData.properties.triggerThreshold}}"/>
+        </div>
+        <button class="save" (click)="updateScheduled(displayName.value, severity.value, triggerOperator.value, triggerThreshold.value )">Save</button>
+
+    </form>
+
+
+    <form  *ngIf="!isScheduledTrue">
+        <div class="form-group">
+            <label>Enabled</label>
+            <select #enabled name="enabled">
+                <option>Enabled</option>
+                <option>Disabled</option>
+            </select>
+        </div>
+
+        <button class="save" (click)="update(enabled.value)">Save</button>
+
+    </form>
+
+
+</div>

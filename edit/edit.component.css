@@ -1,0 +1,28 @@
+.back{
+    cursor: pointer;
+}
+
+
+.edit-container {
+    width: 60%;
+    margin: 15px auto;
+}
+
+.form-group{
+    margin: 10px;
+}
+
+label{
+    width: 200px;
+    display: inline-block;
+}
+
+input{
+    width: 500px;
+    height: 25px;
+    border-radius: 3px;
+}
+
+.save{
+    margin-top: 30px;
+}
