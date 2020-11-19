@@ -1,0 +1,17 @@
+{
+  "hosting": [
+    {
+      "app": {
+        "project": "sentinel",
+        "target": "build",
+        "configuration": "production",
+        "path": "dist/sentinel"
+      },
+      "azureHosting": {
+        "subscription": "b9ea4710-7dde-4960-aaa2-5252ef7ae23c",
+        "resourceGroupName": "VitalyN-RG",
+        "account": ""
+      }
+    }
+  ]
+}

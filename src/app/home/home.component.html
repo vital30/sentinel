@@ -1,0 +1,25 @@
+
+
+<div class="grid">
+  <button (click)="getSelectedRows()" [disabled]="!validate">Deploy Selected Rows</button>
+
+
+
+    <ag-grid-angular
+    #agGrid
+    id="myGrid"
+    class="ag-theme-alpine"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs"
+    [defaultColDef]="defaultColDef"
+    [cacheBlockSize]="cacheBlockSize"
+    [maxBlocksInCache]="maxBlocksInCache"
+    (firstDataRendered)="onFirstDataRendered($event)"
+    rowSelection="multiple"
+    (rowClicked)='onRowClicked($event)'
+    (selectionChanged)="onSelectionChanged($event)"
+    (gridReady)="onGridReady($event)"
+
+>
+</ag-grid-angular>
+</div>
