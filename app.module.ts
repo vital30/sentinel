@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { EditComponent } from './edit/edit.component';
 import {RulesService} from "./services/rules.service";
-
 import 'ag-grid-enterprise';
 
 @NgModule({

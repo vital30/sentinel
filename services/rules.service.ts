@@ -15,7 +15,6 @@ export class RulesService {
   resourceGroupName = "VitalyN-RG";
   workspaceName = "vitalSentinelWorkspace";
 
-  baseUrl = "https://management.azure.com/subscriptions/"+ this.subscriptionId +"/resourceGroups/"+ this.resourceGroupName +"/providers/Microsoft.OperationalInsights/workspaces/"+ this.workspaceName +"/providers/Microsoft.SecurityInsights/alertRuleTemplates?api-version=2020-01-01";
   url = "https://management.azure.com/subscriptions/b9ea4710-7dde-4960-aaa2-5252ef7ae23c/resourceGroups/VitalyN-RG/providers/Microsoft.OperationalInsights/workspaces/vitalSentinelWorkspace/providers/Microsoft.SecurityInsights/alertRuleTemplates?api-version=2020-01-01";
   
   
